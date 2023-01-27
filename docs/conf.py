@@ -11,7 +11,7 @@ project = "PyData Theme"
 copyright = "2019, PyData Community"
 author = "PyData Community"
 
-import pydata_sphinx_theme
+import neuroinformatics_sphinx_theme
 
 
 # -- General configuration ---------------------------------------------------
@@ -81,7 +81,7 @@ version_match = os.environ.get("READTHEDOCS_VERSION")
 # If it is an integer, we're in a PR build and the version isn't correct.
 if not version_match or version_match.isdigit():
     # For local development, infer the version to match from the package.
-    release = pydata_sphinx_theme.__version__
+    release = neuroinformatics_sphinx_theme.__version__
     if "dev" in release or "rc" in release:
         version_match = "latest"
         # We want to keep the relative reference if we are in dev mode
