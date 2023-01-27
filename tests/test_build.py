@@ -221,7 +221,7 @@ def test_logo_external_link(sphinx_build_factory):
 def test_logo_external_image(sphinx_build_factory):
     """Test that the logo link is correct for external URLs."""
     # Test with a specified external logo image source
-    test_url = "https://pydata.org/wp-content/uploads/2019/06/pydata-logo-final.png"
+    test_url = "https://neuroinformatics.org/wp-content/uploads/2019/06/neuroinformatics-logo-final.png"
     confoverrides = {
         "html_theme_options": {
             "logo": {
@@ -298,7 +298,7 @@ def test_navbar_align_right(sphinx_build_factory):
 
 
 def test_navbar_no_in_page_headers(sphinx_build_factory, file_regression):
-    # https://github.com/pydata/pydata-sphinx-theme/issues/302
+    # https://github.com/neuroinformatics/neuroinformatics-sphinx-theme/issues/302
     sphinx_build = sphinx_build_factory("test_navbar_no_in_page_headers").build()
 
     index_html = sphinx_build.html_tree("index.html")
@@ -415,7 +415,7 @@ def test_included_toc(sphinx_build_factory):
     """
     # Regression test for bug resolved in #347.
     # Tests mainly makes sure that the sphinx_build.build() does not raise exception.
-    # https://github.com/pydata/pydata-sphinx-theme/pull/347
+    # https://github.com/neuroinformatics/neuroinformatics-sphinx-theme/pull/347
 
     sphinx_build = sphinx_build_factory("test_included_toc").build()
     included_page_html = sphinx_build.html_tree("included-page.html")

@@ -65,7 +65,7 @@ jobs:
         run: python tests/check_warnings.py
 
       - name: Run the tests
-        run: pytest --color=yes --cov pydata_sphinx_theme --cov-branch --cov-report term-missing:skip-covered --cov-fail-under ${{ env.COVERAGE_THRESHOLD }}
+        run: pytest --color=yes --cov neuroinformatics_sphinx_theme --cov-branch --cov-report term-missing:skip-covered --cov-fail-under ${{ env.COVERAGE_THRESHOLD }}
 
       - name: Upload coverage
         if: ${{ always() }}
@@ -103,7 +103,7 @@ jobs:
           mkdir audit/site
           cp -r docs/examples/kitchen-sink audit/site/kitchen-sink
           printf "Test\n====\n\n.. toctree::\n\n   kitchen-sink/index\n" > audit/site/index.rst
-          echo 'html_theme = "pydata_sphinx_theme"' > audit/site/conf.py
+          echo 'html_theme = "neuroinformatics_sphinx_theme"' > audit/site/conf.py
           echo '.. toctree::\n   :glob:\n\n   *' >> audit/site/index.rst
           sphinx-build audit/site audit/_build
 

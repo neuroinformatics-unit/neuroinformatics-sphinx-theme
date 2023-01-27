@@ -10,4 +10,4 @@ root_doc = "index"
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = "pydata_sphinx_theme"
+html_theme = "neuroinformatics_sphinx_theme"

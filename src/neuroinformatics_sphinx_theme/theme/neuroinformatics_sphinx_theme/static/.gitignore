@@ -1,8 +1,8 @@
 # theme generated webpack outputs
-scripts/pydata-sphinx-theme.js
-scripts/pydata-sphinx-theme.js.map
-styles/pydata-sphinx-theme.css
-styles/pydata-sphinx-theme.css.map
+scripts/neuroinformatics-sphinx-theme.js
+scripts/neuroinformatics-sphinx-theme.js.map
+styles/neuroinformatics-sphinx-theme.css
+styles/neuroinformatics-sphinx-theme.css.map
 
 # bootstrap generated webpack outputs
 scripts/bootstrap.js

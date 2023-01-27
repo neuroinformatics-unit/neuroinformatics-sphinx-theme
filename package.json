@@ -1,6 +1,6 @@
 {
-  "name": "pydata_sphinx_theme",
-  "repository": "https://github.com/pydata/pydata-sphinx-theme",
+  "name": "neuroinformatics_sphinx_theme",
+  "repository": "https://github.com/neuroinformatics/neuroinformatics-sphinx-theme",
   "scripts": {
     "build": "webpack"
   },

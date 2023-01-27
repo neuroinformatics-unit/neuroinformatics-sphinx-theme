@@ -1,5 +1,5 @@
 """
-Bootstrap-based sphinx theme from the PyData community
+Bootstrap-based sphinx theme from the neuroinformatics community
 """
 import os
 from pathlib import Path
@@ -218,7 +218,7 @@ def update_templates(app, pagename, templatename, context, doctree):
     # - theme.conf
     # - manually linked in `webpack-macros.html`
     if "css_files" in context:
-        theme_css_name = "_static/styles/pydata-sphinx-theme.css"
+        theme_css_name = "_static/styles/neuroinformatics-sphinx-theme.css"
         if theme_css_name in context["css_files"]:
             context["css_files"].remove(theme_css_name)
 
@@ -254,7 +254,7 @@ def update_templates(app, pagename, templatename, context, doctree):
 def add_inline_math(node):
     """Render a node with HTML tags that activate MathJax processing.
     This is meant for use with rendering section titles with math in them, because
-    math outputs are ignored by pydata-sphinx-theme's header.
+    math outputs are ignored by neuroinformatics-sphinx-theme's header.
 
     related to the behaviour of a normal math node from:
     https://github.com/sphinx-doc/sphinx/blob/master/sphinx/ext/mathjax.py#L28
@@ -1029,9 +1029,9 @@ class ShortenLinkTransform(SphinxPostTransform):
 
 def setup(app):
     here = Path(__file__).parent.resolve()
-    theme_path = here / "theme" / "pydata_sphinx_theme"
+    theme_path = here / "theme" / "neuroinformatics_sphinx_theme"
 
-    app.add_html_theme("pydata_sphinx_theme", str(theme_path))
+    app.add_html_theme("neuroinformatics_sphinx_theme", str(theme_path))
 
     app.add_post_transform(ShortenLinkTransform)
 

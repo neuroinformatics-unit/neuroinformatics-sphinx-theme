@@ -8,7 +8,7 @@ root_doc = "index"
 
 # -- General configuration ---------------------------------------------------
 
-html_theme = "pydata_sphinx_theme"
+html_theme = "neuroinformatics_sphinx_theme"
 
 html_copy_source = True
 html_sourcelink_suffix = ""

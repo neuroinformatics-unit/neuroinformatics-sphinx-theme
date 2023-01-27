@@ -1,5 +1,5 @@
 /**
- * Webpack configuration for pydata-sphinx-theme.
+ * Webpack configuration for neuroinformatics-sphinx-theme.
  *
  * This script does a few primary things:
  *
@@ -23,8 +23,8 @@ const { Compilation } = require("webpack");
 
 const vendorVersions = {fontAwesome: require("@fortawesome/fontawesome-free/package.json").version};
 
-const scriptPath = resolve(__dirname, "src/pydata_sphinx_theme/assets/scripts");
-const staticPath = resolve(__dirname,"src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static");
+const scriptPath = resolve(__dirname, "src/neuroinformatics_sphinx_theme/assets/scripts");
+const staticPath = resolve(__dirname,"src/neuroinformatics_sphinx_theme/theme/neuroinformatics_sphinx_theme/static");
 const vendorPath = resolve(staticPath, "vendor");
 const faPath = {fontAwesome: resolve(vendorPath, "fontawesome", vendorVersions.fontAwesome)};
 
@@ -45,11 +45,11 @@ function font(woff2){ return `<link rel="preload" as="font" type="font/woff2" cr
  const theme_stylesheets = [
   "styles/theme.css", // basic sphinx css
   "styles/bootstrap.css", // all bootstrap 5 css with variable adjustments
-  "styles/pydata-sphinx-theme.css", // all the css created for this specific theme
+  "styles/neuroinformatics-sphinx-theme.css", // all the css created for this specific theme
 ];
 const theme_scripts = [
   "scripts/bootstrap.js",
-  "scripts/pydata-sphinx-theme.js",
+  "scripts/neuroinformatics-sphinx-theme.js",
 ];
 const fa_stylesheets = [
   `vendor/fontawesome/${vendorVersions.fontAwesome}/css/all.min.css`,
@@ -130,7 +130,7 @@ module.exports = {
   mode: "production",
   devtool: "source-map",
   entry: {
-    "pydata-sphinx-theme": resolve(scriptPath, "pydata-sphinx-theme.js"),
+    "neuroinformatics-sphinx-theme": resolve(scriptPath, "neuroinformatics-sphinx-theme.js"),
     "bootstrap": resolve(scriptPath, "bootstrap.js"),
   },
   output: {filename: "scripts/[name].js", path: staticPath},

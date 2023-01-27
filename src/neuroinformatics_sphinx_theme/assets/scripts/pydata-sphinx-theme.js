@@ -1,10 +1,10 @@
 // Define the custom behavior of the page
 import { documentReady } from "./mixin";
 
-import "../styles/pydata-sphinx-theme.scss";
+import "../styles/neuroinformatics-sphinx-theme.scss";
 
 /*******************************************************************************
- * Theme interaction
+ * Theme neuroinformatics
  */
 
 var prefersDark = window.matchMedia("(prefers-color-scheme: dark)");

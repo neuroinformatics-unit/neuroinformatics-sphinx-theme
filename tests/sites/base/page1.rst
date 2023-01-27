@@ -3,17 +3,17 @@ Page 1
 
 **normal link**
 
-- https://pydata-sphinx-theme.readthedocs.io/en/latest/
+- https://neuroinformatics-sphinx-theme.readthedocs.io/en/latest/
 
 **GitHub**
 
 .. container:: github-container
 
     https://github.com
-    https://github.com/pydata
-    https://github.com/pydata/pydata-sphinx-theme
-    https://github.com/pydata/pydata-sphinx-theme/pull/1012
-    https://github.com/orgs/pydata/projects/2
+    https://github.com/neuroinformatics
+    https://github.com/neuroinformatics/neuroinformatics-sphinx-theme
+    https://github.com/neuroinformatics/neuroinformatics-sphinx-theme/pull/1012
+    https://github.com/orgs/neuroinformatics/projects/2
 
 **GitLab**
 

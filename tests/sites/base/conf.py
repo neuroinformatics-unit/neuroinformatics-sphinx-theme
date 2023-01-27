@@ -12,7 +12,7 @@ root_doc = "index"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = []
-html_theme = "pydata_sphinx_theme"
+html_theme = "neuroinformatics_sphinx_theme"
 html_logo = "emptylogo.png"
 html_copy_source = True
 html_sourcelink_suffix = ""
