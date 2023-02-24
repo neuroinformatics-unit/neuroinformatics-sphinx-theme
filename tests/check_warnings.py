@@ -47,7 +47,8 @@ def check_warnings(file):
 
     # the remaining one are unexpected
     for twa in test_warnings:
-        print(f"{Fore.YELLOW}Unexpected warning: {Fore.RESET}{twa}\n")
+        if twa != "":
+            print(f"{Fore.YELLOW}Unexpected warning: {Fore.RESET}{twa}\n")
 
     return len(missing_warnings) != 0 or len(test_warnings) != 0
 
