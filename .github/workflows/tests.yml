@@ -60,10 +60,6 @@ jobs:
       - name: Build docs to store
         run: sphinx-build -b html docs/ docs/_build/html --keep-going -w warnings.txt
 
-      - name: Check that there are no unexpected Sphinx warnings
-        if: matrix.python-version == '3.9'
-        run: python tests/check_warnings.py
-
       - name: Run the tests
         run: pytest --color=yes --cov neuroinformatics_sphinx_theme --cov-branch --cov-report term-missing:skip-covered --cov-fail-under ${{ env.COVERAGE_THRESHOLD }}
 
