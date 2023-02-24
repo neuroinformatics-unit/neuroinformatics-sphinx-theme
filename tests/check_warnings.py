@@ -51,7 +51,7 @@ def check_warnings(file):
             print(f"{Fore.YELLOW}Unexpected warning: {Fore.RESET}{twa}\n")
         else:
             test_warnings.pop(index[0])
-            
+
     return len(missing_warnings) != 0 or len(test_warnings) != 0
 
 
