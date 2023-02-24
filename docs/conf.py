@@ -17,6 +17,5 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'test-project'
-html_theme = 'neuroinformatics_sphinx_theme'
-
+project = "test-project"
+html_theme = "neuroinformatics_sphinx_theme"
